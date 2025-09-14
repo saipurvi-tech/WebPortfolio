@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Purvi S - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1F1F1F;
+      scroll-behavior: smooth;
+      /* Full-page background image */
+      background: url('Bg.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .font-heading {
+      font-family: 'Poppins', sans-serif;
+    }
+    .glass-container {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(15px);
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+    .profile-pic {
+      border-radius: 9999px;
+      width: 12rem;
+      height: 12rem;
+      object-fit: cover;
+      object-position: center;
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+    .section-title {
+      color: #800000;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      color: #1F1F1F;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-container space-y-12">
+
+    <!-- Profile Section -->
+    <section class="text-center space-y-4">
+      <!-- Replace placeholder URL with your actual profile image if needed -->
+      <img src="Profile.jpeg" alt="Profile" class="profile-pic mx-auto" onerror="this.src='https://via.placeholder.com/150';">
+      <h1 class="font-heading text-3xl font-bold">Sai Purvi S</h1>
+      <p class="text-sm text-gray-700">saipurvis789@gmail.com | +91 9108556667</p>
+    </section>
+
+    <!-- About Me -->
+    <section class="space-y-4">
+      <h2 class="section-title">About Me</h2>
+      <p>Hello! I'm Purvi, a curious and driven 2nd year engineering student at AMC Engineering College in Bengaluru. I have a deep passion for exploring new ideas, learning different tech, and expressing creativity through design and programming. My hobbies range from reading books and playing instruments to mastering programming languages like Java, C, C++, SQL, design tools, and graphic designing.</p>
+    </section>
+
+    <!-- My Education -->
+    <section class="space-y-4">
+      <h2 class="section-title">My Education</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><b>AMC Engineering College</b> - B.Tech in Computer Science (2nd Year)</li>
+        <li><b>Jain College</b> - Cleared PUC with 93%</li>
+      </ul>
+    </section>
+
+    <!-- My Projects -->
+    <section class="space-y-4">
+      <h2 class="section-title">My Projects</h2>
+      <div class="space-y-4">
+        <div class="p-4 border rounded-lg hover:shadow-lg transition-shadow bg-white/30 backdrop-blur-sm">
+          <h3 class="font-semibold text-lg">Project 1 - "Sleep Debt Wallet"</h3>
+          <p>An innovative app designed to track screen time and promote healthier digital habits. It automatically locks social media apps if the user exceeds predefined limits, helping improve focus and productivity.</p>
+        </div>
+        <div class="p-4 border rounded-lg hover:shadow-lg transition-shadow bg-white/30 backdrop-blur-sm">
+          <h3 class="font-semibold text-lg">Project 2 - "Time-Wise Analysis Of Unemployment In India"</h3>
+          <p>A comprehensive data analysis project that studies unemployment trends over different time periods. The project provides insights into patterns, challenges, and opportunities for addressing employment issues in India.</p>
+        </div>
+        <div class="p-4 border rounded-lg hover:shadow-lg transition-shadow bg-white/30 backdrop-blur-sm">
+          <h3 class="font-semibold text-lg">Project 3 - "Fortune Cookies"</h3>
+          <p>A creative and interactive application that delivers random fortunes, motivational messages, or fun predictions to users, combining programming logic with a playful user experience.</p>
+        </div>
+        <div class="p-4 border rounded-lg hover:shadow-lg transition-shadow bg-white/30 backdrop-blur-sm">
+          <h3 class="font-semibold text-lg">Project 4 - "Waste Segregating Machine"</h3>
+          <p>A smart device built using Arduino that efficiently separates different types of waste. This project demonstrates particle engineering skills and promotes sustainable waste management by automating the segregation process.</p>
+        </div>
+        <div class="p-4 border rounded-lg hover:shadow-lg transition-shadow bg-white/30 backdrop-blur-sm">
+          <h3 class="font-semibold text-lg">Project 5 - "Piezo-Electric Generator"</h3>
+          <p>A standalone project using Piezo Electric discs to generate electricity from foot stamps. This innovative approach converts mechanical energy into electrical energy, showcasing a creative method of energy harvesting and practical application of electronics concepts.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
